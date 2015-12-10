@@ -4,7 +4,7 @@ body {
   width:100%;
   height:100%; 
   position:absolute;
-  margin: 0;
+  margin: 0 0 100px;
   padding: 0;
 }
 
@@ -48,13 +48,13 @@ a:visited {
 
 /* -- Article -- */
 [role="article"] {
+  display: block;
   background-color: #fff;
   width: 700px;
   padding: 10px;
   margin: 40px 0px 0px 200px;
   border-radius: 2px;
   box-shadow: 1px 1px 1px 0 rgba(0,0,0,.07),1px 2px 5px 0 rgba(0,0,0,.06);
-  transition: box-shadow 0.3s;
   color: #444;
 }
 
@@ -67,25 +67,29 @@ a:visited {
 }
 
 /* -- Sidebar -- */
-.page-wrapper aside {
+aside {
+  position:absolute;
   background-color: #fafafa;
-  right:0; 
-  top:2.5%; 
+  padding: 0px 15px 0px 5px;
+  right: 500px;
+  top: 145px; 
   font-size: 12px;
   border-radius: 2px;
   box-shadow: 1px 1px 1px 0 rgba(0,0,0,.07),1px 2px 5px 0 rgba(0,0,0,.06);
-  transition: box-shadow 0.3s;
 }
 
 aside .wrapper a {
   font-size: 12px;
   font-weight: bold;
 }
-
+aside .wrapper ul li {
+  list-style-type: none;
+  padding: 0px 0px 0px -15px;
+}
 aside h3 {
- background-color: #33d685;
- width: 50%;
-  color: #fff;
+  
+  width: 50%;
+  color: #444;
   padding: 5px;
   border-radius: 3px;
 }
@@ -95,13 +99,15 @@ aside h3 {
 footer {
   background-color: #333;
   text-align: center; 
-  position: relative; 
+  position: relative;
+  height: 50px;
+  
 }
 
 footer a {
   background-color: #33d685;
   border-radius: 3px;
-  padding: 4px;
+  padding: 10px;
   color: #fff;
 }
 
