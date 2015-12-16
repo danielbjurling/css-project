@@ -16,16 +16,16 @@ h3 {
 /* -- Links -- */
 
 a:link {
-  color: #000;
+  color: #33d685;
   text-decoration: none;
 }
 
 a:hover {
-  color: #33d685;
+  color: #3F3F40;
 }
 
 a:visited {
-  color: #289961;
+  color: #33A691;
 }
 
 /* -- Header -- */
@@ -75,6 +75,7 @@ div[role=article] {
 div[role=article] h3 {
   background-color: #fff;
   box-shadow: 0 5px 2px -2px rgba(0, 0, 0, .07), 0 5px 2px -2px rgba(0, 0, 0, .06);
+  color: #3F3F40;
   height: 30px;
   padding: 15px 10px 8px 10px;
   margin: -10px -5px -5px -11px;
@@ -112,7 +113,7 @@ div[role=article] h3:before {
   text-shadow: 0px 0px #000;
 }
 .intro .summary a:hover {
-  background-color: #292d30;
+  background-color: #3F3F40;
 }
 .intro .preamble {
   width: 80%;
@@ -136,9 +137,8 @@ div[role=article] h3:before {
 
 .sidebar h3 {
   background-color: #fff;
-  border-bottom: 2px solid #33d685;
   box-shadow: 0 5px 1px -2px rgba(0, 0, 0, .07);
-  color: #444;
+  color: #3F3F40;
   font-size: 1.4em;
   height: 20px;
   margin: 0 0 0 -5px;
