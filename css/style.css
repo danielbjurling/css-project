@@ -90,6 +90,7 @@ div[role=article] h3:before {
 .intro .summary {
   background-image: url(../images/wood.jpg);
   border-radius: 0px;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, .07), 1px 2px 5px 0 rgba(0, 0, 0, .06);
   height: 100px;
   width: 100%;
   padding: 1% 1% 1%;
@@ -99,6 +100,7 @@ div[role=article] h3:before {
 .intro .summary p {
   color: #fff;
   font-weight: bold;
+  text-align: center;
   text-shadow: 1px 1px #000;
 }
 
@@ -106,7 +108,7 @@ div[role=article] h3:before {
   background-color: #33d685;
   border-radius: 3px;
   color: #fff;
-  padding: 2px;
+  padding: 4px;
   text-shadow: 0px 0px #000;
 }
 .intro .summary a:hover {
@@ -148,7 +150,7 @@ div[role=article] h3:before {
   display: block;
 }
 
-.design-selection {
+.design-archives, .zen-resources, .design-selection {
   background-color: #fff;
   border-radius: 2px;
   box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, .07), 1px 2px 5px 0 rgba(0, 0, 0, .06);
@@ -160,25 +162,6 @@ div[role=article] h3:before {
 .design-selection li {
   margin-bottom: 15px;
 }
-
-.design-archives {
-  background-color: #fff;
-  border-radius: 2px;
-  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, .07), 1px 2px 5px 0 rgba(0, 0, 0, .06);
-  margin-top: 10px;
-  padding: 0px 15px 2px 5px;
-  width: 100%;
-}
-
-.zen-resources {
-  background-color: #fff;
-  border-radius: 2px;
-  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, .07), 1px 2px 5px 0 rgba(0, 0, 0, .06);
-  margin-top: 10px;
-  padding: 0px 15px 2px 5px;
-  width: 100%;
-}
-
 
 /* -- Footer -- */
 
