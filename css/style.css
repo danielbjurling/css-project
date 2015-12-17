@@ -1,45 +1,43 @@
 body {
-  background-color: #f2f2f2;
-  font-family: 'Open Sans', sans-serif;
+  background: url(../images/bg.gif) #f2f2f2 bottom center no-repeat; 
+  background-size: auto;
+  font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
   margin: 0;
 }
 
-
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: "Avant Garde", "Century Gothic", sans-serif;
   text-transform: uppercase;
 }
 
-/* -- Links -- */
 
+/* ==== LINKS ==== */
 a:link {
   color: #33d685;
   text-decoration: none;
+  transition-property: color, text;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: linear, ease-in;
 }
-
 a:hover {
   color: #3F3F40;
 }
-
 a:visited {
-  color: #33A691;
+  color: #3F3F40;
 }
 
-/* -- Header -- */
+
+/* ==== HEADER ==== */
 header {
   background-color: #fff;
-  height: 100%;
-  margin: -1%;
+  margin: -1% auto;
   padding: 1% 0 1% 2%;
   text-transform: uppercase;
-  width: 100%;
 }
-
 header h2 {
   background-color: #33d685;
+  border-radius: 3px;
   color: #fff;
   font-size: 1.4em;
   margin-top: -20px;
@@ -48,8 +46,7 @@ header h2 {
 }
 
 
-/* -- Article -- */
-
+/* ==== CONTENT ==== */
 .intro {
   float: left;
   width: 100%;
@@ -57,12 +54,43 @@ header h2 {
 
 .main {
   float: left;
-  width: 60%;
-  margin-left: 9.5%;
+  width: 60.5%;
+  margin-left: 10%;
+}
+
+.intro .summary {
+  background-image: url(../images/wood.jpg);
+
+  height: 100px;
+  padding: 1% 1% 1%;
+  margin: 1% auto;
+}
+.intro .summary p {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px #000;
+}
+.intro .summary a:link {
+  background-color: #33d685;
+  border-radius: 3px;
+  color: #fff;
+  padding: 4px;
+  text-shadow: 0px 0px #000;
+  transition-property: background;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: linear, ease-in;
+}
+.intro .summary a:hover {
+  background-color: #3F3F40;
+}
+.intro .preamble {
+  width: 80%;
+  margin: 4% 10% 2%;
 }
 
 div[role=article] {
-  border-radius: 2px;
+  border-radius: 3px;
   box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, .07), 1px 2px 5px 0 rgba(0, 0, 0, .06);
   background-color: #fff;
   color: #000;
@@ -71,7 +99,6 @@ div[role=article] {
   overflow: hidden;
   padding: 10px 10px 0 10px;
 }
-
 div[role=article] h3 {
   background-color: #fff;
   box-shadow: 0 5px 2px -2px rgba(0, 0, 0, .07), 0 5px 2px -2px rgba(0, 0, 0, .06);
@@ -82,45 +109,13 @@ div[role=article] h3 {
   text-align: left;
   width: 101%;
 }
-
 div[role=article] h3:before {
   content: "// ";
   color: #33d685;
 }
 
-.intro .summary {
-  background-image: url(../images/wood.jpg);
-  border-radius: 0px;
-  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, .07), 1px 2px 5px 0 rgba(0, 0, 0, .06);
-  height: 100px;
-  width: 100%;
-  padding: 1% 1% 1%;
-  margin: 1% auto;
-}
 
-.intro .summary p {
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 1px 1px #000;
-}
-
-.intro .summary a:link {
-  background-color: #33d685;
-  border-radius: 3px;
-  color: #fff;
-  padding: 4px;
-  text-shadow: 0px 0px #000;
-}
-.intro .summary a:hover {
-  background-color: #3F3F40;
-}
-.intro .preamble {
-  width: 80%;
-  margin: 4% auto 2%;
-}
-
-/* -- Sidebar -- */
+/* ==== SIDEBAR ==== */
 .sidebar {
   font-size: 12px;
   font-weight: bold;
@@ -129,12 +124,10 @@ div[role=article] h3:before {
   float: left;
   margin: -10px 0 0 10px;
 }
-
 .sidebar .wrapper ul li {
   list-style-type: none;
   margin-left: -35px;
 }
-
 .sidebar h3 {
   background-color: #fff;
   box-shadow: 0 5px 1px -2px rgba(0, 0, 0, .07);
@@ -145,42 +138,62 @@ div[role=article] h3:before {
   padding: 10px 10px 10px 10px;
   width: 100%;
 }
+.sidebar h3:before {
+  content: "// ";
+  color: #33d685;
+}
 
 .design-name {
   display: block;
 }
-
 .design-archives, .zen-resources, .design-selection {
   background-color: #fff;
-  border-radius: 2px;
+  border-radius: 3px;
   box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, .07), 1px 2px 5px 0 rgba(0, 0, 0, .06);
   margin-top: 10px;
   padding: 0px 15px 2px 5px;
   width: 100%;
 }
-
 .design-selection li {
   margin-bottom: 15px;
 }
 
-/* -- Footer -- */
 
+/* ==== FOOTER ==== */
 footer {
   clear: both;
   height: 50px;
   text-align: center;
+  font-weight: bold;
 }
-
 footer a:link {
-  background-color: #33d685;
+  background-color: #fff;
   border-radius: 3px;
-  color: #fff;
+  color: #33d685;
   padding: 10px;
+  transition-property: background;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: linear, ease-in;
 }
-
 footer a:hover {
   background-color: #292d30;
   color: #fff;
 }
 
 
+/* ==== MEDIA QUERIES ==== */
+@media screen and (max-width: 768px){
+  .main {
+    margin-left: 5%;
+  }
+  .intro .preamble {
+    margin: 4% 5% 2%;
+  }
+  .sidebar {
+    width: 18%;
+  }
+  .sidebar h3 {
+    
+    font-size: 1.1em;
+  }
+}
